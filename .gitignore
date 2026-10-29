@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+raw_data_budget_2026.xlsx
+.streamlit/secrets.toml
+.DS_Store
