@@ -1,32 +1,50 @@
 # Transplant Medication Budget & Capacity Planning
 
-Interactive Python dashboard for exploring medication-budget sustainability and transplant-volume scenarios.
+An interactive dashboard for exploring medication expenditure, budget sustainability, and the financial feasibility of transplant service expansion.
 
-**Public portfolio demonstration — every supplied data value is fictional.** No hospital extracts, patient records, drug-specific purchase prices, or original Git history are included.
+Built by **Maher Aldemerdash, Consultant Transplant Nephrologist**.
 
-## What it demonstrates
-- Interactive budget composition and annual expenditure projections.
-- Adult and pediatric kidney/liver transplant cost modelling.
-- Multiyear maintenance-cost carry-over from new transplant cohorts.
-- Sensitivity to medication prices, cost uplifts, growth and census changes.
-- Scenario comparisons for medication-budget planning.
+## Project background
+
+The original project addressed a 50% reduction in a transplant department’s medication budget. It examined spending patterns and opportunities to accommodate increased transplant activity within the revised medication budget.
+
+I independently delivered the project from data preparation through analysis, dashboard development, and presentation to hospital leadership.
+
+## Analytical functionality
+
+- Medication expenditure breakdown by patient group.
+- Adult and pediatric kidney and liver transplant scenarios.
+- Multiyear projections incorporating ongoing maintenance costs.
+- Sensitivity analyses for medication prices, complication-related costs, and activity growth.
+- Interactive comparisons of expenditure and available medication budget.
+
+## Data preparation
+
+The original analysis required linking, cleaning, reconciling, and validating data from five sources.
+
+This repository contains the dashboard and calculation engine. The original source datasets and upstream data-engineering pipeline are not included.
+
+## Public demonstration
+
+**All bundled data are synthetic.** Patient counts, costs, and budget assumptions are fictional examples created to demonstrate the interface. They do not represent hospital records or reproduce the original findings.
+
+Financial feasibility refers to medication-budget affordability; it does not establish staffing, bed, theatre, or total departmental capacity.
 
 ## Run locally
+
+Requires Python 3.10 or later.
+
 ```bash
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 streamlit run app.py
 ```
-The synthetic workbook is bundled; no private data or credentials are required.
 
-## Project context and contribution
-Maher Aldemerdash independently developed the original departmental analytics project, including integration, cleaning and validation of five source datasets, scenario analysis, dashboard development and presentation to hospital leadership. The underlying project examined medication-budget constraints and the financial feasibility of transplant expansion.
+The synthetic workbook is included; no private datasets or credentials are required.
 
-This repository demonstrates the dashboard and scenario engine. The original five-source data-engineering pipeline is not included. Public synthetic outputs do not reproduce or substantiate the original financial findings.
+## Technology
 
-## Synthetic inputs
-`synthetic_budget_data.xlsx` contains invented aggregate census, annual costs, placeholder protocol cost components and specialty-therapy costs. The illustrative SAR 12 million budget is on a comparable departmental scale, without representing an institution. All costs are illustrative and are not clinical protocols or market-price estimates.
+Python · Streamlit · pandas · Plotly · Excel
 
-## Scope and limitations
-This copy preserves the original calculation logic; only demo inputs, default constants and identifying/display text were changed. It is an illustrative portfolio tool, not a validated operational or clinical decision system. Capacity refers to medication-budget affordability, not staffing, theatres, beds or achieved transplant activity. Annual spending is treated as evenly distributed for depletion estimates; case mix is fixed in capacity calculations. Census reductions and specialty-cost exclusions model departmental budget effects, not proven system-wide savings or recommendations to alter care.
+## Scope
 
-Known inherited limitations: the standalone maximum-capacity helper double-counts specialty costs; the displayed additional-capacity card uses separate logic. Budget percentage properties use a fixed demo ceiling. Calculation corrections were outside the requested scope.
+This portfolio demonstration preserves the original modelling approach. It is intended to illustrate analytical functionality and is not validated for operational or clinical decisions.
