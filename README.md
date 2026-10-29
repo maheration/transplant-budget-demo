@@ -47,4 +47,4 @@ Python · Streamlit · pandas · Plotly · Excel
 
 ## Scope
 
-This portfolio demonstration preserves the original modelling approach. It is intended to illustrate analytical functionality and is not validated for operational or clinical decisions.
+This portfolio demonstration preserves the original modelling approach. It is intended to illustrate analytical functionality.
